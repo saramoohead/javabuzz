@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="src/Javabuzz.js"></script>
+  </head>
+  <body>
+    <h2>FizzBuzz with JavaScript</h2>
+    <div id="fizzy">
+      <script>
+        var iteration = 1
+        javabuzz = new Javabuzz();
+        var javabuzzy = function(){
+          if(iteration > 20) return
+          document.write(javabuzz.says(iteration
+            ));
+          document.write("<p></p>");
+          ++iteration;
+        };
+          setInterval(function() { javabuzzy() },
+            800);
+      </script>
+    </div>
+  </body>
+</html>
