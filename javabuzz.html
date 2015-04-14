@@ -7,21 +7,22 @@
     <h2>FizzBuzz with JavaScript</h2>
     <div id="fizzy">
       <script>
-        var iteration = 1
-        javabuzz = new Javabuzz();
-        var javabuzzy = function(){
-          if(iteration > 20) {
-            console.log(iteration);
-              clearInterval(interval);
+          var iteration = 1
+          javabuzz = new Javabuzz();
+          var javabuzzy = function(){
+              if(iteration > 20) {
+                  console.log(iteration);
+                  clearInterval(interval);
               return
           };
+          
           document.write(javabuzz.says(iteration
-            ));
+          ));
           document.write("<p></p>");
-          ++iteration;
+              ++iteration;
         };
-          var interval = setInterval(function() { javabuzzy() },
-            4);
+          var interval = setInterval(function() {javabuzzy() },
+            800);
       </script>
     </div>
   </body>
