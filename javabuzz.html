@@ -10,14 +10,18 @@
         var iteration = 1
         javabuzz = new Javabuzz();
         var javabuzzy = function(){
-          if(iteration > 20) return
+          if(iteration > 20) {
+            console.log(iteration);
+              clearInterval(interval);
+              return
+          };
           document.write(javabuzz.says(iteration
             ));
           document.write("<p></p>");
           ++iteration;
         };
-          setInterval(function() { javabuzzy() },
-            800);
+          var interval = setInterval(function() { javabuzzy() },
+            4);
       </script>
     </div>
   </body>
